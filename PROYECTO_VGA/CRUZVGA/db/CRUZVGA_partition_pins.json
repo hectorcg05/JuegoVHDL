@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "VSINC",
+					"strict" : false
+				},
+				{
+					"name" : "HSINC",
+					"strict" : false
+				},
+				{
+					"name" : "R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "INC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INF[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INF[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INF[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INF[0]",
+					"strict" : false
+				},
+				{
+					"name" : "START",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

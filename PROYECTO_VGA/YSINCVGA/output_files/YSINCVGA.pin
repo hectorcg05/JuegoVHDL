@@ -1,0 +1,393 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1A:       2.5V
+ --                  Bank 1B:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+CHIP  "YSINCVGA"  ASSIGNED TO AN: 10M02DCU324A6G
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
+NC                           : A7        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8         :                
+NC                           : A10       :        :                   :         :           :                
+NC                           : A11       :        :                   :         :           :                
+NC                           : A12       :        :                   :         :           :                
+NC                           : A13       :        :                   :         :           :                
+NC                           : A14       :        :                   :         :           :                
+NC                           : A15       :        :                   :         :           :                
+NC                           : A16       :        :                   :         :           :                
+NC                           : A17       :        :                   :         :           :                
+GND                          : A18       : gnd    :                   :         :           :                
+NC                           : B1        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B2        :        :                   :         : 8         :                
+NC                           : B3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
+GND                          : B6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B9        :        :                   :         : 8         :                
+GND                          : B10       : gnd    :                   :         :           :                
+NC                           : B11       :        :                   :         :           :                
+NC                           : B12       :        :                   :         :           :                
+NC                           : B13       :        :                   :         :           :                
+NC                           : B14       :        :                   :         :           :                
+GND                          : B15       : gnd    :                   :         :           :                
+NC                           : B16       :        :                   :         :           :                
+NC                           : B17       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 6         :                
+NC                           : C1        :        :                   :         :           :                
+NC                           : C2        :        :                   :         :           :                
+NC                           : C3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
+NC                           : C11       :        :                   :         :           :                
+NC                           : C12       :        :                   :         :           :                
+NC                           : C13       :        :                   :         :           :                
+NC                           : C14       :        :                   :         :           :                
+NC                           : C15       :        :                   :         :           :                
+NC                           : C16       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 6         :                
+NC                           : D1        :        :                   :         :           :                
+NC                           : D2        :        :                   :         :           :                
+GND                          : D3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 1A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
+NC                           : D9        :        :                   :         :           :                
+NC                           : D10       :        :                   :         :           :                
+NC                           : D11       :        :                   :         :           :                
+NC                           : D12       :        :                   :         :           :                
+NC                           : D13       :        :                   :         :           :                
+NC                           : D14       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 6         :                
+NC                           : E1        :        :                   :         :           :                
+NC                           : E2        :        :                   :         :           :                
+NC                           : E3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 1A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 1A        :                
+GND                          : E6        : gnd    :                   :         :           :                
+VCCIO8                       : E7        : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+GND                          : E10       : gnd    :                   :         :           :                
+NC                           : E11       :        :                   :         :           :                
+NC                           : E12       :        :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+NC                           : E14       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
+NC                           : F1        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1A        :                
+NC                           : F3        :        :                   :         :           :                
+NC                           : F4        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1A        :                
+VCCA3                        : F6        : power  :                   : 2.5V    :           :                
+NC                           : F7        :        :                   :         :           :                
+GND                          : F8        : gnd    :                   :         :           :                
+VCCIO8                       : F9        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
+NC                           : F11       :        :                   :         :           :                
+NC                           : F12       :        :                   :         :           :                
+VCCD_PLL2                    : F13       : power  :                   : 1.2V    :           :                
+VCCA2                        : F14       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 6         :                
+GND                          : F17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
+NC                           : G1        :        :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1A        :                
+GND                          : G4        : gnd    :                   :         :           :                
+VCCIO1                       : G5        : power  :                   : 2.5V    : 1A, 1B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 1B        :                
+~ALTERA_nSTATUS~ / RESERVED_INPUT : G8        : input  : 2.5 V Schmitt Trigger :         : 8         : N              
+~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : G9        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 6         :                
+VCCIO6                       : G13       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 6         :                
+YCOUNT[7]                    : G17       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H1        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   :         : 1B        :                
+~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H3        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
+~ALTERA_TDO~                 : H4        : output : 2.5 V             :         : 1B        : N              
+VCCIO1                       : H5        : power  :                   : 2.5V    : 1A, 1B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1B        :                
+~ALTERA_CONF_DONE~ / RESERVED_INPUT : H8        : input  : 2.5 V Schmitt Trigger :         : 8         : N              
+~ALTERA_nCONFIG~ / RESERVED_INPUT : H9        : input  : 2.5 V Schmitt Trigger :         : 8         : N              
+VCC                          : H10       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 6         :                
+VCCIO6                       : H13       : power  :                   : 2.5V    : 6         :                
+GND                          : H14       : gnd    :                   :         :           :                
+NC                           : H15       :        :                   :         :           :                
+NC                           : H16       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J1        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J2        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1B        :                
+VCCIO1                       : J5        : power  :                   : 2.5V    : 1A, 1B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 1B        :                
+~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : J7        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
+~ALTERA_TCK~ / RESERVED_INPUT : J8        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
+VCC                          : J9        : power  :                   : 1.2V    :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+NC                           : J11       :        :                   :         :           :                
+NC                           : J12       :        :                   :         :           :                
+VCCIO6                       : J13       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : J14       : power  :                   : 2.5V    : 6         :                
+NC                           : J15       :        :                   :         :           :                
+NC                           : J16       :        :                   :         :           :                
+GND                          : J17       : gnd    :                   :         :           :                
+START                        : J18       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   :         : 1B        :                
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1A, 1B    :                
+GND                          : K6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K7        :        :                   :         : 1B        :                
+CLOCK                        : K8        : input  : 2.5 V             :         : 2         : N              
+GND                          : K9        : gnd    :                   :         :           :                
+VCC                          : K10       : power  :                   : 1.2V    :           :                
+YCOUNT[3]                    : K11       : input  : 2.5 V             :         : 6         : N              
+YCOUNT[6]                    : K12       : input  : 2.5 V             :         : 6         : N              
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K16       :        :                   :         : 5         :                
+YSTATE[0]                    : K17       : output : 2.5 V             :         : 6         : N              
+YCOUNT[5]                    : K18       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 2         :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCIO2                       : L5        : power  :                   : 2.5V    : 2         :                
+VCCIO2                       : L6        : power  :                   : 2.5V    : 2         :                
+NC                           : L7        :        :                   :         :           :                
+RESET                        : L8        : input  : 2.5 V             :         : 2         : N              
+VCC                          : L9        : power  :                   : 1.2V    :           :                
+NC                           : L10       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L11       :        :                   :         : 5         :                
+YSTATE[1]                    : L12       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : L13       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : L14       : power  :                   : 2.5V    : 5         :                
+VSINC                        : L15       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L17       :        :                   :         : 6         :                
+YCOUNT[2]                    : L18       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 2         :                
+VCCIO2                       : M5        : power  :                   : 2.5V    : 2         :                
+VCCA1                        : M6        : power  :                   : 2.5V    :           :                
+NC                           : M7        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 3         :                
+NC                           : M10       :        :                   :         :           :                
+NC                           : M11       :        :                   :         :           :                
+NC                           : M12       :        :                   :         :           :                
+VCCIO5                       : M13       : power  :                   : 2.5V    : 5         :                
+GND                          : M14       : gnd    :                   :         :           :                
+NC                           : M15       :        :                   :         :           :                
+NC                           : M16       :        :                   :         :           :                
+YCOUNT[8]                    : M17       : input  : 2.5 V             :         : 6         : N              
+YCOUNT[0]                    : M18       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
+GND                          : N2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 2         :                
+GND                          : N5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : N6        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3         :                
+VCCIO3                       : N9        : power  :                   : 2.5V    : 3         :                
+GND                          : N10       : gnd    :                   :         :           :                
+NC                           : N11       :        :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+NC                           : N13       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
+NC                           : N15       :        :                   :         :           :                
+NC                           : N16       :        :                   :         :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+YCOUNT[1]                    : N18       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+NC                           : P2        :        :                   :         :           :                
+NC                           : P3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3         :                
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : P8        : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
+NC                           : P10       :        :                   :         :           :                
+NC                           : P11       :        :                   :         :           :                
+NC                           : P12       :        :                   :         :           :                
+VCCA4                        : P13       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P17       :        :                   :         : 5         :                
+YCOUNT[4]                    : P18       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   :         : 2         :                
+NC                           : R3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 3         :                
+GND                          : R7        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
+NC                           : R10       :        :                   :         :           :                
+NC                           : R11       :        :                   :         :           :                
+NC                           : R12       :        :                   :         :           :                
+NC                           : R13       :        :                   :         :           :                
+NC                           : R14       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
+YCOUNT[9]                    : R18       : input  : 2.5 V             :         : 5         : N              
+NC                           : T1        :        :                   :         :           :                
+NC                           : T2        :        :                   :         :           :                
+NC                           : T3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3         :                
+NC                           : T11       :        :                   :         :           :                
+NC                           : T12       :        :                   :         :           :                
+NC                           : T13       :        :                   :         :           :                
+NC                           : T14       :        :                   :         :           :                
+NC                           : T15       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5         :                
+NC                           : T18       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U3        :        :                   :         : 3         :                
+GND                          : U4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3         :                
+GND                          : U10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3         :                
+NC                           : U12       :        :                   :         :           :                
+NC                           : U13       :        :                   :         :           :                
+GND                          : U14       : gnd    :                   :         :           :                
+NC                           : U15       :        :                   :         :           :                
+NC                           : U16       :        :                   :         :           :                
+NC                           : U17       :        :                   :         :           :                
+NC                           : U18       :        :                   :         :           :                
+GND                          : V1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
+NC                           : V10       :        :                   :         :           :                
+NC                           : V11       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 3         :                
+NC                           : V13       :        :                   :         :           :                
+NC                           : V14       :        :                   :         :           :                
+NC                           : V15       :        :                   :         :           :                
+NC                           : V16       :        :                   :         :           :                
+NC                           : V17       :        :                   :         :           :                
+GND                          : V18       : gnd    :                   :         :           :                

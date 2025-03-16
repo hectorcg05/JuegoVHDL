@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "YSTATE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "YSTATE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VSINC",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "YCOUNT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "START",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

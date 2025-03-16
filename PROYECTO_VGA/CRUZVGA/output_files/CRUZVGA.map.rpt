@@ -1,0 +1,436 @@
+Analysis & Synthesis report for CRUZVGA
+Thu Mar 06 12:07:02 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |CRUZVGA|XSINCVGA:I4|EDO
+  9. State Machine - |CRUZVGA|YSINCVGA:I3|EDO
+ 10. User-Specified and Inferred Latches
+ 11. General Register Statistics
+ 12. Port Connectivity Checks: "CONTMOD525:I2|SUMAUNO10B:I0|HA:I0"
+ 13. Port Connectivity Checks: "CONTMOD525:I2"
+ 14. Port Connectivity Checks: "CONTMOD800:I1|SUMAUNO10:I0|HA:I0"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Mar 06 12:07:02 2025       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; CRUZVGA                                     ;
+; Top-level Entity Name              ; CRUZVGA                                     ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 87                                          ;
+;     Total combinational functions  ; 87                                          ;
+;     Dedicated logic registers      ; 31                                          ;
+; Total registers                    ; 31                                          ;
+; Total pins                         ; 25                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; CRUZVGA            ; CRUZVGA            ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 10          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-10        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; ../AritmeticaVHDL/HA/HA.vhd      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/AritmeticaVHDL/HA/HA.vhd           ;         ;
+; ../CONTADOR4B/SUMAUNO10B.vhd     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/SUMAUNO10B.vhd          ;         ;
+; ../CONTADOR4B/CONTMOD800.vhd     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD800.vhd          ;         ;
+; ../CONTADOR4B/CONTMOD525.vhd     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD525.vhd          ;         ;
+; ../SUMAUNO4/SUMAUNO10.vhd        ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/SUMAUNO4/SUMAUNO10.vhd             ;         ;
+; YSINCVGA/YSINCVGA.vhd            ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd ;         ;
+; XSINCVGA/XSINCVGA.vhd            ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/XSINCVGA/XSINCVGA.vhd ;         ;
+; DIVFREC/DIVFREC.vhd              ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/DIVFREC/DIVFREC.vhd   ;         ;
+; CRUZVGA.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd           ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 87          ;
+;                                             ;             ;
+; Total combinational functions               ; 87          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 51          ;
+;     -- 3 input functions                    ; 22          ;
+;     -- <=2 input functions                  ; 14          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 87          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 31          ;
+;     -- Dedicated logic registers            ; 31          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 25          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; START~input ;
+; Maximum fan-out                             ; 26          ;
+; Total fan-out                               ; 447         ;
+; Average fan-out                             ; 2.66        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
+; |CRUZVGA                   ; 87 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |CRUZVGA                                   ; CRUZVGA     ; work         ;
+;    |CONTMOD525:I2|         ; 14 (3)              ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2                     ; CONTMOD525  ; work         ;
+;       |SUMAUNO10B:I0|      ; 11 (1)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0       ; SUMAUNO10B  ; work         ;
+;          |HA:I1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I1 ; HA          ; work         ;
+;          |HA:I2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I2 ; HA          ; work         ;
+;          |HA:I3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I3 ; HA          ; work         ;
+;          |HA:I4|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I4 ; HA          ; work         ;
+;          |HA:I5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I5 ; HA          ; work         ;
+;          |HA:I6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I6 ; HA          ; work         ;
+;          |HA:I7|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I7 ; HA          ; work         ;
+;          |HA:I8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD525:I2|SUMAUNO10B:I0|HA:I8 ; HA          ; work         ;
+;    |CONTMOD800:I1|         ; 16 (3)              ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1                     ; CONTMOD800  ; work         ;
+;       |SUMAUNO10:I0|       ; 13 (4)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0        ; SUMAUNO10   ; work         ;
+;          |HA:I1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I1  ; HA          ; work         ;
+;          |HA:I2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I2  ; HA          ; work         ;
+;          |HA:I3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I3  ; HA          ; work         ;
+;          |HA:I4|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I4  ; HA          ; work         ;
+;          |HA:I5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I5  ; HA          ; work         ;
+;          |HA:I6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I6  ; HA          ; work         ;
+;          |HA:I7|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I7  ; HA          ; work         ;
+;          |HA:I8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|CONTMOD800:I1|SUMAUNO10:I0|HA:I8  ; HA          ; work         ;
+;    |DIVFREC:I0|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|DIVFREC:I0                        ; DIVFREC     ; work         ;
+;    |XSINCVGA:I4|           ; 37 (37)             ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|XSINCVGA:I4                       ; XSINCVGA    ; work         ;
+;    |YSINCVGA:I3|           ; 19 (19)             ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CRUZVGA|YSINCVGA:I3                       ; YSINCVGA    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------+
+; State Machine - |CRUZVGA|XSINCVGA:I4|EDO                 ;
++----------+--------+---------+--------+--------+----------+
+; Name     ; EDO.FP ; EDO.VIS ; EDO.BP ; EDO.PS ; EDO.IDLE ;
++----------+--------+---------+--------+--------+----------+
+; EDO.IDLE ; 0      ; 0       ; 0      ; 0      ; 0        ;
+; EDO.PS   ; 0      ; 0       ; 0      ; 1      ; 1        ;
+; EDO.BP   ; 0      ; 0       ; 1      ; 0      ; 1        ;
+; EDO.VIS  ; 0      ; 1       ; 0      ; 0      ; 1        ;
+; EDO.FP   ; 1      ; 0       ; 0      ; 0      ; 1        ;
++----------+--------+---------+--------+--------+----------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------+
+; State Machine - |CRUZVGA|YSINCVGA:I3|EDO                 ;
++----------+--------+---------+--------+--------+----------+
+; Name     ; EDO.FP ; EDO.VIS ; EDO.BP ; EDO.PS ; EDO.IDLE ;
++----------+--------+---------+--------+--------+----------+
+; EDO.IDLE ; 0      ; 0       ; 0      ; 0      ; 0        ;
+; EDO.PS   ; 0      ; 0       ; 0      ; 1      ; 1        ;
+; EDO.BP   ; 0      ; 0       ; 1      ; 0      ; 1        ;
+; EDO.VIS  ; 0      ; 1       ; 0      ; 0      ; 1        ;
+; EDO.FP   ; 1      ; 0       ; 0      ; 0      ; 1        ;
++----------+--------+---------+--------+--------+----------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++----------------------------------------------------+----------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal  ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------+------------------------+
+; YSINCVGA:I3|VSINC                                  ; YSINCVGA:I3|EDO.IDLE ; yes                    ;
+; YSINCVGA:I3|YSTATE[0]                              ; YSINCVGA:I3|EDO.IDLE ; yes                    ;
+; YSINCVGA:I3|YSTATE[1]                              ; YSINCVGA:I3|EDO.IDLE ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                      ;                        ;
++----------------------------------------------------+----------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 31    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 31    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "CONTMOD525:I2|SUMAUNO10B:I0|HA:I0" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; b    ; Input ; Info     ; Stuck at VCC                        ;
++------+-------+----------+-------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CONTMOD525:I2"                                                                                           ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; co   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "CONTMOD800:I1|SUMAUNO10:I0|HA:I0" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 25                          ;
+; cycloneiii_ff         ; 31                          ;
+;     CLR               ; 11                          ;
+;     ENA CLR           ; 20                          ;
+; cycloneiii_lcell_comb ; 88                          ;
+;     normal            ; 88                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 51                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.85                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Mar 06 12:06:51 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CRUZVGA -c CRUZVGA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /intelfpga_lite/18.1/tec21/aritmeticavhdl/ha/ha.vhd
+    Info (12022): Found design unit 1: HA-RTL File: C:/intelFPGA_lite/18.1/Tec21/AritmeticaVHDL/HA/HA.vhd Line: 13
+    Info (12023): Found entity 1: HA File: C:/intelFPGA_lite/18.1/Tec21/AritmeticaVHDL/HA/HA.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /intelfpga_lite/18.1/tec21/contador4b/sumauno10b.vhd
+    Info (12022): Found design unit 1: SUMAUNO10B-RTL File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/SUMAUNO10B.vhd Line: 14
+    Info (12023): Found entity 1: SUMAUNO10B File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/SUMAUNO10B.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /intelfpga_lite/18.1/tec21/contador4b/contmod800.vhd
+    Info (12022): Found design unit 1: CONTMOD800-RTL File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD800.vhd Line: 13
+    Info (12023): Found entity 1: CONTMOD800 File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD800.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /intelfpga_lite/18.1/tec21/contador4b/contmod525.vhd
+    Info (12022): Found design unit 1: CONTMOD525-RTL File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD525.vhd Line: 13
+    Info (12023): Found entity 1: CONTMOD525 File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD525.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /intelfpga_lite/18.1/tec21/sumauno4/sumauno10.vhd
+    Info (12022): Found design unit 1: SUMAUNO10-RTL File: C:/intelFPGA_lite/18.1/Tec21/SUMAUNO4/SUMAUNO10.vhd Line: 14
+    Info (12023): Found entity 1: SUMAUNO10 File: C:/intelFPGA_lite/18.1/Tec21/SUMAUNO4/SUMAUNO10.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ysincvga/ysincvga.vhd
+    Info (12022): Found design unit 1: YSINCVGA-RTL File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 18
+    Info (12023): Found entity 1: YSINCVGA File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file xsincvga/xsincvga.vhd
+    Info (12022): Found design unit 1: XSINCVGA-RTL File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/XSINCVGA/XSINCVGA.vhd Line: 20
+    Info (12023): Found entity 1: XSINCVGA File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/XSINCVGA/XSINCVGA.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file divfrec/divfrec.vhd
+    Info (12022): Found design unit 1: DIVFREC-RTL File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/DIVFREC/DIVFREC.vhd Line: 13
+    Info (12023): Found entity 1: DIVFREC File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/DIVFREC/DIVFREC.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file cruzvga.vhd
+    Info (12022): Found design unit 1: CRUZVGA-RTL File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 15
+    Info (12023): Found entity 1: CRUZVGA File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 7
+Info (12127): Elaborating entity "CRUZVGA" for the top level hierarchy
+Info (12128): Elaborating entity "DIVFREC" for hierarchy "DIVFREC:I0" File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 55
+Info (12128): Elaborating entity "CONTMOD800" for hierarchy "CONTMOD800:I1" File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at CONTMOD800.vhd(36): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD800.vhd Line: 36
+Info (12128): Elaborating entity "SUMAUNO10" for hierarchy "CONTMOD800:I1|SUMAUNO10:I0" File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD800.vhd Line: 46
+Info (12128): Elaborating entity "HA" for hierarchy "CONTMOD800:I1|SUMAUNO10:I0|HA:I0" File: C:/intelFPGA_lite/18.1/Tec21/SUMAUNO4/SUMAUNO10.vhd Line: 27
+Info (12128): Elaborating entity "CONTMOD525" for hierarchy "CONTMOD525:I2" File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at CONTMOD525.vhd(35): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD525.vhd Line: 35
+Info (12128): Elaborating entity "SUMAUNO10B" for hierarchy "CONTMOD525:I2|SUMAUNO10B:I0" File: C:/intelFPGA_lite/18.1/Tec21/CONTADOR4B/CONTMOD525.vhd Line: 45
+Info (12128): Elaborating entity "YSINCVGA" for hierarchy "YSINCVGA:I3" File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at YSINCVGA.vhd(66): inferring latch(es) for signal or variable "YSTATE", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 66
+Warning (10631): VHDL Process Statement warning at YSINCVGA.vhd(66): inferring latch(es) for signal or variable "VSINC", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 66
+Info (10041): Inferred latch for "VSINC" at YSINCVGA.vhd(66) File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 66
+Info (10041): Inferred latch for "YSTATE[0]" at YSINCVGA.vhd(66) File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 66
+Info (10041): Inferred latch for "YSTATE[1]" at YSINCVGA.vhd(66) File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/YSINCVGA/YSINCVGA.vhd Line: 66
+Info (12128): Elaborating entity "XSINCVGA" for hierarchy "XSINCVGA:I4" File: C:/intelFPGA_lite/18.1/Tec21/PROYECTO_VGA/CRUZVGA.vhd Line: 59
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 87 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu Mar 06 12:07:02 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
+
+

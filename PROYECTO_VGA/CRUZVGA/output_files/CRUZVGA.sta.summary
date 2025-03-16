@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'DIVFREC:I0|FF'
+Slack : -4.359
+TNS   : -40.721
+
+Type  : Slow 1200mV 85C Model Setup 'YSINCVGA:I3|EDO.IDLE'
+Slack : -1.894
+TNS   : -4.483
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.366
+TNS   : -1.366
+
+Type  : Slow 1200mV 85C Model Setup 'CONTMOD800:I1|Q[0]'
+Slack : -1.233
+TNS   : -7.513
+
+Type  : Slow 1200mV 85C Model Hold 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CONTMOD800:I1|Q[0]'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DIVFREC:I0|FF'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 1.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'DIVFREC:I0|FF'
+Slack : -4.531
+TNS   : -43.283
+
+Type  : Slow 1200mV 85C Model Recovery 'CONTMOD800:I1|Q[0]'
+Slack : -1.849
+TNS   : -18.014
+
+Type  : Slow 1200mV 85C Model Removal 'DIVFREC:I0|FF'
+Slack : 0.928
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CONTMOD800:I1|Q[0]'
+Slack : 1.860
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIVFREC:I0|FF'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTMOD800:I1|Q[0]'
+Slack : -1.403
+TNS   : -14.030
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'DIVFREC:I0|FF'
+Slack : -3.990
+TNS   : -36.407
+
+Type  : Slow 1200mV 0C Model Setup 'YSINCVGA:I3|EDO.IDLE'
+Slack : -1.729
+TNS   : -4.137
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.178
+TNS   : -1.178
+
+Type  : Slow 1200mV 0C Model Setup 'CONTMOD800:I1|Q[0]'
+Slack : -1.020
+TNS   : -6.054
+
+Type  : Slow 1200mV 0C Model Hold 'DIVFREC:I0|FF'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CONTMOD800:I1|Q[0]'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 1.168
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'DIVFREC:I0|FF'
+Slack : -4.144
+TNS   : -39.598
+
+Type  : Slow 1200mV 0C Model Recovery 'CONTMOD800:I1|Q[0]'
+Slack : -1.620
+TNS   : -15.716
+
+Type  : Slow 1200mV 0C Model Removal 'DIVFREC:I0|FF'
+Slack : 0.770
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'CONTMOD800:I1|Q[0]'
+Slack : 1.706
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIVFREC:I0|FF'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTMOD800:I1|Q[0]'
+Slack : -1.403
+TNS   : -14.030
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DIVFREC:I0|FF'
+Slack : -1.569
+TNS   : -9.311
+
+Type  : Fast 1200mV 0C Model Setup 'YSINCVGA:I3|EDO.IDLE'
+Slack : -0.405
+TNS   : -0.752
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.313
+TNS   : -0.313
+
+Type  : Fast 1200mV 0C Model Setup 'CONTMOD800:I1|Q[0]'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CONTMOD800:I1|Q[0]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DIVFREC:I0|FF'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'DIVFREC:I0|FF'
+Slack : -1.493
+TNS   : -13.881
+
+Type  : Fast 1200mV 0C Model Recovery 'CONTMOD800:I1|Q[0]'
+Slack : -0.231
+TNS   : -2.074
+
+Type  : Fast 1200mV 0C Model Removal 'DIVFREC:I0|FF'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CONTMOD800:I1|Q[0]'
+Slack : 0.793
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIVFREC:I0|FF'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTMOD800:I1|Q[0]'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'YSINCVGA:I3|EDO.IDLE'
+Slack : 0.374
+TNS   : 0.000
+
+------------------------------------------------------------
