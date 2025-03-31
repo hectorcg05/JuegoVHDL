@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Mar 14 19:05:14 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : BOXVGA
+Top-level Entity Name : BOXVGA
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 4,170 / 49,760 ( 8 % )
+    Total combinational functions : 4,166 / 49,760 ( 8 % )
+    Dedicated logic registers : 468 / 49,760 ( < 1 % )
+Total registers : 468
+Total pins : 21 / 360 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 12 / 288 ( 4 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
